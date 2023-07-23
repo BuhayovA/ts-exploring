@@ -17,6 +17,10 @@ class DemoClassDec {
   set surname(value: string) {
     this.#surname = value;
   }
+
+  get surname() {
+    return this.#surname;
+  }
 }
 
 function ClassDec<This, Args extends any[]>(
